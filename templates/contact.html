@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: cyan;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+        .item {
+            font-size: 18px;
+        }
+        .item a {
+            text-decoration: none;
+            color: black;
+        }
+        .name {
+            font-size: 24px;
+            text-align: left;
+        }
+        .active:hover {
+        color: red;
+        }
+
+        section.page-footer{
+	        width: 100%;
+	        padding: 20px 0;
+	        #padding-top: 20px;
+	        #padding-bottom: 20px;
+	        background-color: rgb(18, 18, 19);
+        }
+        .page-footer .footer-contents{
+	        display: flex;
+	        justify-content: center;
+        }
+        .footer-contents p{
+	        font-size: 14px;
+	        color: #999;
+        }
+        .footer-contents p span{
+	        color: #ff5252;
+	        font-weight: bold;
+        }
+
+        .container2
+        {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 0px;
+}
+.container2 .infocontact
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.container2 .infocontact .boite
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.container2 .contactForm
+{
+    position: relative;
+    width: 45%;
+    background: #fff;
+    min-height: 500px;
+    padding: 10px;
+}
+.container2 .contactForm h2
+{
+    font-size: 2em;
+    color: #333;
+    font-weight: 500;
+}
+.container2 .contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.container2 .contactForm .inputBox input,
+.container2 .contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.container2 .contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666;
+    transition: 0.5s;
+}
+.container2 .contactForm .inputBox input:focus ~ span,
+.container2 .contactForm .inputBox textarea:focus ~ span,
+.container2 .contactForm .inputBox input:valid ~ span,
+.container2 .contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+.container2 .contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.container2 .contactForm .inputBox input[type="submit"]:hover
+{
+    width: 100px;
+    background: #0096a9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="name">
+                <a>Pneuma CATIANY</a>
+            </div>
+
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item">
+                        <a class="active" href="../index">A propos</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../competence">Competences</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../projet">Projets</a>
+                    </li>
+                    <li class="item">
+                        <a style="color: red;" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div style="text-align: center; margin-top: 50px;" class="content">
+            <h2>Contact</h2>
+            <p>En quête d’un idéal candidat ? Vous tombez bien. Laissez un message pour de plus amples informations, je me ferai un plaisir de vous répondre au plus vite.</p>
+        </div>
+        <div class="container2">
+            <div style="margin-top: -30px;" class="infocontact">
+                <div class="boite">
+                    <div class="icone"><ion-icon name="location-outline"></ion-icon></div>
+                    <div class="texte">
+                        <h3>Adresse</h3>
+                        <p>Eddy One, Tabarre 49,<br>BLVD 15 OCT</p>
+                    </div>
+                </div>
+                <div class="boite">
+                    <div class="icone"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="texte">
+                        <h3>Téléphone</h3>
+                        <p>+ (509) 47 04 5935</p>
+                    </div>
+                </div>
+                <div class="boite">
+                    <div class="icone"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="texte">
+                        <h3>Email</h3>
+                        <p>pneumacatiany4@gmail</p>
+                    </div>
+                </div>
+<!--                <h2 class="txt">Connectez-vous avec moi.</h2>-->
+                <ul style="list-style: none; text-decoration: none; display: flex; justify-content: space-between; padding: 0 0;" class="sci">
+                    <li><a href="https://wa.me/50947045935/?text=Salut%20%21%20J%27ai%20visité%20votre%20site%20portfolio%2C%20je%20souhaite%20discuter%20avec%20vous%2E" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/theophin.carlos.9`" target="_blank">Facebook</a></li>
+                    <li><a href="https://t.me/pneumatheo/" target="_blank" class="fa-brands fa-telegram">Telegram</a></li>
+                    <li><a href="https://www.linkedin.com/in/tpc4" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="contactForm">
+                <form action="https://formsubmit.co/pneumacatiany4@gmail.com" method="POST">
+                    <h2>Envoyer un message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" required="required" autocomplete="off">
+                        <span>Nom complet</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="Email" required="required" autocomplete="off">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea type="text" name="Message" required="required" autocomplete="off"></textarea>
+                        <span>Ecrivez votre message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- <input type="hidden" name="_next" value="http://192.168.0.161:5500/thanks.html"> -->
+                        <input type="hidden" name="_next" value="https://pneumac4.github.io/cthp/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-footer">
+        <footer class="footer-contents">
+            <p>&copy; 2023 <span>Catiany</span> | Tous droits réservés.</p>
+        </footer>
+    </section>
+
+</body>
+</html>

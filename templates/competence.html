@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: cyan;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+        .item {
+            font-size: 18px;
+        }
+        .item a {
+            text-decoration: none;
+            color: black;
+        }
+        .name {
+            font-size: 24px;
+            text-align: left;
+        }
+        .active:hover {
+        color: red;
+        }
+
+        section.page-footer{
+	        width: 100%;
+	        padding: 20px 0;
+	        #padding-top: 20px;
+	        #padding-bottom: 20px;
+	        background-color: rgb(18, 18, 19);
+        }
+        .page-footer .footer-contents{
+	        display: flex;
+	        justify-content: center;
+        }
+        .footer-contents p{
+	        font-size: 14px;
+	        color: #999;
+        }
+        .footer-contents p span{
+	        color: #ff5252;
+	        font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="name">
+                <a>Pneuma CATIANY</a>
+            </div>
+
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item">
+                        <a class="active" href="../index">A propos</a>
+                    </li>
+                    <li class="item">
+                        <a style="color: red;" href="">Competences</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../projet">Projets</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section style="text-align: center; margin-top: 50px;" class="project-order">
+
+	<h2>Avez-vous un projet en plan?</h2>
+	<p>En quête d’un idéal candidat ? Vous tombez bien. Laissez un message pour de plus amples informations, je me ferai un plaisir de vous répondre au plus vite.</p>
+
+    </section>
+
+    <section style="margin: 50px;">
+            <div class="contactInfo language">
+                <h3 class="title">Compétences</h3>
+                <ul>
+                    <li>
+                        <span class="text">
+                            Microsoft Office
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            Visual Studio & VS Code
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            PyCharm
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            Photoshop
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            Windows Server
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            HTML/CSS
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            Python & Django
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            C#, C++
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            PHP, MySQL
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">
+                            WordPress
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactInfo language">
+                <h3 class="title">Langues</h3>
+                <ul>
+                    <li>
+                        <span class="text">Français</span>
+                        <span style="color:dodgerblue; font-size:x-large;">&nbsp;&nbsp;&nbsp;● &nbsp;● &nbsp;● </span>
+                        <span style="color:rgb(30, 143, 255); font-size:x-large;">&nbsp;● </span>
+                        <span style="color:rgba(30, 143, 255, 0.199); font-size:x-large;">&nbsp;●</span>
+                    </li>
+                    <li>
+                        <span class="text">Anglais</span>
+                        <span style="color:#00304700; font-size:8.5px;">●</span>
+                        <span style="color:dodgerblue; font-size:x-large;">&nbsp; ●&nbsp; ● </span>
+                        <span style="color:rgba(30, 143, 255, 0.750); font-size:x-large;">&nbsp;● </span>
+                        <span style="color:rgba(30, 143, 255, 0.400); font-size:x-large;">&nbsp;● </span>
+                        <span style="color:rgba(30, 143, 255, 0.200); font-size:x-large;">&nbsp;●</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactInfo language">
+                <h3 class="title">Qualités</h3>
+                <ul>
+                    <li>
+                        <span class="text">Responsable</span>
+                    </li>
+                    <li>
+                        <span class="text">Organisé</span>
+                    </li>
+                    <li>
+                        <span class="text">Esprit d’équipe</span>
+                    </li>
+                </ul>
+            </div>
+
+    </section>
+
+    <section class="page-footer">
+        <footer class="footer-contents">
+            <p>&copy; 2023 <span>Catiany</span> | Tous droits réservés.</p>
+        </footer>
+    </section>
+
+</body>
+</html>

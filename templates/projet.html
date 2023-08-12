@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: cyan;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+        .item {
+            font-size: 18px;
+        }
+        .item a {
+            text-decoration: none;
+            color: black;
+        }
+        .name {
+            font-size: 24px;
+            text-align: left;
+        }
+        .active:hover {
+        color: red;
+        }
+
+        section.page-footer{
+	        width: 100%;
+	        padding: 20px 0;
+	        #padding-top: 20px;
+	        #padding-bottom: 20px;
+	        background-color: rgb(18, 18, 19);
+        }
+        .page-footer .footer-contents{
+	        display: flex;
+	        justify-content: center;
+        }
+        .footer-contents p{
+	        font-size: 14px;
+	        color: #999;
+        }
+        .footer-contents p span{
+	        color: #ff5252;
+	        font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="name">
+                <a>Pneuma CATIANY</a>
+            </div>
+
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item">
+                        <a class="active" href="../index">A propos</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../competence">Competences</a>
+                    </li>
+                    <li class="item">
+                        <a style="color: red;" href="">Projets</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="portfolio" id="portfolio">
+	<!--   === Portfolio Header Starts ===   -->
+	<header style="text-align: center;" class="section-heading">
+		<h1 style="margin-top: 40px;">Quelques Projets</h1>
+		<p>Chaque projet est une occasion d'apprendre, de grandir et de se surpasser. Qui veut, trouve un moyen ; qui ne veut pas, trouve une excuse.</p>
+	</header>
+	<!--   === Portfolio Header Ends ===   -->
+	<!--   === Portfolio Contents Starts ===   -->
+	<div style="margin: 50px; display: flex; justify-content: space-between;" class="portfolio-contents unique">
+<div style="margin-left: 50px;">
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Application</h3>
+				<p>Gestion de vente en magasin</p>
+			</div>
+		</div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Application</h3>
+				<p>Gestion d'un barber shop</p>
+			</div>
+		</div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Application</h3>
+				<p>Gestion d'une clinique dentaire</p>
+			</div>
+		</div>
+
+		<div class="portfolio-item">
+			<div class="project-desc">
+				<h3>Application Web</h3>
+				<p>Prise en charge de cas légers</p>
+			</div>
+		</div>
+    </div>
+
+    <div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Application</h3>
+				<p>Dictionnaire Français-Anglais</p>
+			</div>
+		</div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Site Web</h3>
+				<p>Lynx Optique Lunetterie : LOL</p>
+			</div>
+		</div>
+
+        <div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Carte professionnelle</h3>
+				<p>Pour mon projet baptisé #lequilibriste</p>
+			</div>
+		</div>
+
+		<div class="portfolio-item">
+			<div class="project-desc">
+				<h3>Flyer</h3>
+				<p>Anniversaire</p>
+			</div>
+		</div>
+    </div>
+
+    <div style="margin-right: 50px;">
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3>Banque de données</h3>
+				<p>Boutique de livres en ligne</p>
+			</div>
+		</div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3 style="margin-top: 5px;">Flyer</h3>
+				<p>Marketing professionnel</p>
+			</div>
+		</div>
+
+		<div style="margin-bottom: 50px;" class="portfolio-item">
+			<div class="project-desc">
+				<h3 style="margin-top: 5px;">Flyer</h3>
+				<p>Débat</p>
+			</div>
+		</div>
+
+		<div class="portfolio-item">
+			<div class="project-desc">
+				<h3 style="margin-top: 5px;">Application android</h3>
+				<p>Quiz sur la Coupe du monde 2022</p>
+			</div>
+		</div>
+    </div>
+
+	</div>
+
+    </section>
+
+    <section class="page-footer">
+        <footer class="footer-contents">
+            <p>&copy; 2023 <span>Catiany</span> | Tous droits réservés.</p>
+        </footer>
+    </section>
+
+</body>
+</html>

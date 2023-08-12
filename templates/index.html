@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: cyan;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+        .item {
+            font-size: 18px;
+        }
+        .item a {
+            text-decoration: none;
+            color: black;
+        }
+        .name {
+            font-size: 24px;
+            text-align: left;
+        }
+        .active:hover {
+        color: red;
+        }
+
+        .slider-image {
+            flex: 0 0 auto;
+            width: 30%;
+        }
+
+        .welcome-image img {
+            max-height: 600px;
+            width: 100%;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .welcome-image {
+            position: relative;
+        }
+
+
+
+        section.page-footer{
+	        width: 100%;
+	        padding: 20px 0;
+	        #padding-top: 20px;
+	        #padding-bottom: 20px;
+	        background-color: rgb(18, 18, 19);
+        }
+        .page-footer .footer-contents{
+	        display: flex;
+	        justify-content: center;
+        }
+        .footer-contents p{
+	        font-size: 14px;
+	        color: #999;
+        }
+        .footer-contents p span{
+	        color: #ff5252;
+	        font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="name">
+                <a>Pneuma CATIANY</a>
+            </div>
+
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item">
+                        <a style="color: red;" href="" >A propos</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../competence">Competences</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../projet">Projets</a>
+                    </li>
+                    <li class="item">
+                        <a class="active" href="../contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section style="display: flex; justify-content: space-between;">
+        <div style="padding: 50px;" class="main">
+            <div class="welcome">
+                <h3 style="margin-top: 50px; margin-bottom: 7%; letter-spacing: 5.5px; text-transform: uppercase;">Bonjour et bienvenue dans mon portfolio !</h3>
+                <h1>Je suis,</h1>
+                <h1 style="font-size: 30px;">Pneuma CATIANY</h1>
+                <p style="width: 70%; text-align: justify; letter-spacing: 2px;">Plus de 3 ans d’expérience dans le domaine de l’enseignement. Gradué en Sciences Informatiques après 4 ans d’études et d’élaboration de projets, comme la conception de sites internets et d’applications. En quête de nouveaux défis pour mettre à profit mes compétences.<br><br>Ma passion pour le graphisme et la programmation, mon savoir-faire en matière de développement web, et d’assistance informatique sont mes principaux atouts. Aptitude à travailler en équipe avec des collaborateurs sur site ou distants.
+                </p>
+            </div>
+        </div>
+        <div class="slider-image">
+            <div class="welcome-image">
+                <img src="https://pneumac4.github.io/cthp/image/image.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="page-footer">
+        <footer class="footer-contents">
+            <p>&copy; 2023 <span>Catiany</span> | Tous droits réservés.</p>
+        </footer>
+    </section>
+
+</body>
+</html>
